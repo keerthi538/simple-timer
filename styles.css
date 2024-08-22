@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.timer__inputs,
+.timer__labels {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.timer__labels span {
+  width: 150px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.timer__inputs input {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  width: 150px;
+  text-align: center;
+}
+
+.colon {
+  font-size: 30px;
+}
+
+.control-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.control-btns button {
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.control-btns-start {
+  background-color: green;
+}
+
+.control-btns-pause {
+  background-color: orange;
+}
+
+.control-btns-reset {
+  background-color: red;
+}
